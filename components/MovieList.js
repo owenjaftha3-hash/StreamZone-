@@ -1,24 +1,23 @@
-export default function MovieList() {
-  const movies = [
-    { title: "Naruto", type: "Anime" },
-    { title: "Inception", type: "Movie" },
-    { title: "Breaking Bad", type: "Series" },
-  ];
+import React from "react";
 
+export default function MovieList() {
   return (
-    <section className="mt-6">
-      <h2 className="text-xl font-semibold mb-4">Trending Now</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        {movies.map((movie, index) => (
-          <div
-            key={index}
-            className="bg-gray-800 rounded-lg p-3 hover:bg-gray-700 transition"
-          >
-            <p className="font-medium">{movie.title}</p>
-            <p className="text-sm text-gray-400">{movie.type}</p>
-          </div>
-        ))}
+    <div>
+      <h1>StreamZone – Top 3 Movies</h1>
+
+      <div>
+        <img src="/matrix.jpg" alt="The Matrix" width="150" />
+        <p>The Matrix</p>
+        <button>Watch</button>
+        <button>Copy Name</button>
       </div>
-    </section>
+
+      <div>
+        <img src="/johnwick.jpg" alt="John Wick" width="150" />
+        <p>John Wick</p>
+        <button>Watch</button>
+        <button>Copy Name</button>
+      </div>
+    </div>
   );
 }
