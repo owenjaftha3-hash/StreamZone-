@@ -1,18 +1,36 @@
 {
-  "name": "StreamZone",
+  "name": "my-nextjs-app",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "next": "14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.3"
   },
   "engines": {
-    "node": "18.x"
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "webapp",
+    "netlify"
+  ],
+  "license": "MIT",
+  "author": "Your Name",
+  "description": "A Next.js web application deployed on Netlify",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/your-repo-name.git"
   }
 }
